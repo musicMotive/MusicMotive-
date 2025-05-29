@@ -2,120 +2,142 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MusicMotive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MusicMotive – Cours de musique</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
-      background: #fefefe;
-      color: #333;
+      background: #fff9f2;
+      color: #222;
     }
     header {
-      background: #222;
-      color: #fff;
-      padding: 2rem 1rem;
+      background-color: #3b3b58;
+      color: white;
+      padding: 2rem;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    header img {
+      max-width: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
     }
     nav {
-      background: #444;
+      background-color: #f2994a;
       text-align: center;
-      padding: 0.5rem;
+      padding: 0.8rem;
     }
     nav a {
-      color: #fff;
-      margin: 0 1rem;
+      color: white;
       text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
+      margin: 0 1rem;
+      font-weight: bold;
     }
     section {
-      padding: 2rem 1rem;
-      max-width: 800px;
+      padding: 2rem;
+      max-width: 900px;
       margin: auto;
     }
     h2 {
-      color: #222;
+      color: #3b3b58;
     }
-    .cta {
+    .cours img {
+      max-width: 150px;
+      margin-right: 1rem;
+      vertical-align: middle;
+      border-radius: 10px;
+    }
+    .contact a {
       display: inline-block;
-      margin-top: 1rem;
-      padding: 0.7rem 1.5rem;
-      background: #0077cc;
+      margin: 0.5rem;
+      padding: 0.8rem 1.2rem;
+      background: #25D366;
       color: white;
       text-decoration: none;
       border-radius: 5px;
+      font-weight: bold;
     }
-    .cta:hover {
-      background: #005fa3;
+    .social a {
+      display: inline-block;
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #3b3b58;
+      font-weight: bold;
+    }
+    .gallery img {
+      max-width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 10px;
     }
     footer {
+      background: #3b3b58;
+      color: white;
       text-align: center;
       padding: 1rem;
-      background: #222;
-      color: #ccc;
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
     }
   </style>
 </head>
 <body>
 
 <header>
+  <img src="brayen.jpg" alt="Brayen" />
   <h1>MusicMotive</h1>
-  <p>Développez votre talent, note après note</p>
+  <p>Apprenez, jouez, progressez – avec passion</p>
 </header>
 
 <nav>
   <a href="#apropos">À propos</a>
   <a href="#cours">Cours</a>
+  <a href="#horaires">Horaires & Tarifs</a>
+  <a href="#galerie">Galerie</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <section id="apropos">
   <h2>À propos</h2>
-  <p>Bienvenue chez MusicMotive ! Je suis Brayen, passionné de musique depuis plus de 20 ans. Je donne des cours de guitare et de piano pour tous les âges et niveaux, dans un esprit bienveillant et personnalisé.</p>
-  <p>Mon objectif ? Vous faire progresser à votre rythme, avec plaisir et motivation.</p>
+  <p>Brayen est un musicien formé et certifié, ayant passé avec succès plusieurs examens auprès de la <strong>Royal School of Music</strong> et du <strong>London College of Music</strong>, deux institutions reconnues à l’échelle internationale.</p>
+  <p>Il a également suivi une formation au <strong>Conservatoire François Mitterrand</strong>, où il a affiné sa pratique instrumentale et pédagogique.</p>
 </section>
 
 <section id="cours">
   <h2>Cours proposés</h2>
-  <h3>🎸 Guitare</h3>
-  <p>Acoustique, électrique ou classique. Rock, pop, chanson, accompagnement, solo. Débutants bienvenus !</p>
-  
-  <h3>🎹 Piano</h3>
-  <p>Classique, moderne ou composition. Travail sur la technique, l’interprétation et l’improvisation.</p>
-  
-  <p><strong>Durée des cours :</strong> 30 min, 45 min ou 1h<br>
-     <strong>Lieu :</strong> À domicile ou en ligne<br>
-     <strong>Tarifs :</strong> Sur demande</p>
+  <div class="cours">
+    <p><img src="guitare.jpg" alt="Cours de guitare" /> 🎸 <strong>Guitare</strong> – tous styles, accompagnement et technique</p>
+    <p><img src="piano.jpg" alt="Cours de piano" /> 🎹 <strong>Piano</strong> – classique, moderne, débutant à avancé</p>
+    <p><img src="theorie.jpg" alt="Théorie musicale" /> 🎼 <strong>Théorie musicale</strong> – lecture, rythme, solfège</p>
+    <p><img src="enfants.jpg" alt="Éveil musical" /> 🌱 <strong>Éveil musical</strong> – pour enfants de 5 à 7 ans</p>
+  </div>
+</section>
 
-  <a href="#contact" class="cta">Me contacter</a>
+<section id="horaires">
+  <h2>Horaires & Tarifs</h2>
+  <p><strong>Jours :</strong> Lundi, Mardi, Jeudi, Vendredi, Samedi</p>
+  <p><strong>Heures :</strong> de 15h à 20h</p>
+  <p><strong>Formules :</strong></p>
+  <ul>
+    <li>Cours en groupe (1h) : Rs 1700 / mois</li>
+    <li>Cours individuel : Rs 3200 / mois</li>
+  </ul>
+</section>
+
+<section id="galerie">
+  <h2>Galerie</h2>
+  <div class="gallery">
+    <img src="photo1.jpg" alt="Cours enfants guitare et piano" />
+    <img src="photo2.jpg" alt="Groupe guitare" />
+  </div>
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
-  <p>Une question ? Une envie d’essayer un cours ? Écrivez-moi !</p>
-  <form action="mailto:votre.email@exemple.com" method="post" enctype="text/plain">
-    <label>Nom :</label><br>
-    <input type="text" name="nom" required><br><br>
-    
-    <label>Email :</label><br>
-    <input type="email" name="email" required><br><br>
-    
-    <label>Message :</label><br>
-    <textarea name="message" rows="5" required></textarea><br><br>
-    
-    <input type="submit" value="Envoyer" class="cta">
-  </form>
+  <p>Une question ? Réservez un cours ou contactez-moi directement :</p>
+  <div class="contact">
+    <a href="https://wa.me/23059737384" target="_blank">📱 WhatsApp Brayen</a>
+  </div>
+  <div class="social">
+    <a href="https://www.facebook.com/share/1aSFZpfh7J/?mibextid=wwXIfr" target="_blank">🔵 Facebook</a>
+    <a href="https://www.tiktok.com/@musicmotive.studio?_t=ZM-8wkqXfu8J2G&_r=1" target="_blank">🎵 TikTok</a>
+  </div>
 </section>
 
 <footer>
