@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MusicMotive</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fefefe;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      background: #444;
+      text-align: center;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #222;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .cta:hover {
+      background: #005fa3;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #222;
+      color: #ccc;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>MusicMotive</h1>
+  <p>Développez votre talent, note après note</p>
+</header>
+
+<nav>
+  <a href="#apropos">À propos</a>
+  <a href="#cours">Cours</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="apropos">
+  <h2>À propos</h2>
+  <p>Bienvenue chez MusicMotive ! Je suis Norbert, passionné de musique depuis plus de 15 ans. Je donne des cours de guitare et de piano pour tous les âges et niveaux, dans un esprit bienveillant et personnalisé.</p>
+  <p>Mon objectif ? Vous faire progresser à votre rythme, avec plaisir et motivation.</p>
+</section>
+
+<section id="cours">
+  <h2>Cours proposés</h2>
+  <h3>🎸 Guitare</h3>
+  <p>Acoustique, électrique ou classique. Rock, pop, chanson, accompagnement, solo. Débutants bienvenus !</p>
+  
+  <h3>🎹 Piano</h3>
+  <p>Classique, moderne ou composition. Travail sur la technique, l’interprétation et l’improvisation.</p>
+  
+  <p><strong>Durée des cours :</strong> 30 min, 45 min ou 1h<br>
+     <strong>Lieu :</strong> À domicile ou en ligne<br>
+     <strong>Tarifs :</strong> Sur demande</p>
+
+  <a href="#contact" class="cta">Me contacter</a>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Une question ? Une envie d’essayer un cours ? Écrivez-moi !</p>
+  <form action="mailto:votre.email@exemple.com" method="post" enctype="text/plain">
+    <label>Nom :</label><br>
+    <input type="text" name="nom" required><br><br>
+    
+    <label>Email :</label><br>
+    <input type="email" name="email" required><br><br>
+    
+    <label>Message :</label><br>
+    <textarea name="message" rows="5" required></textarea><br><br>
+    
+    <input type="submit" value="Envoyer" class="cta">
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 MusicMotive – Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
